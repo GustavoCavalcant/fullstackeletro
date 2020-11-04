@@ -7,14 +7,11 @@
 </head>
 <body>
     <!-- Inicio do menu -->
-    <nav class="menu">
-        <a href="index.html"><img src="imag/logotipo.jpeg" width="100px">
-        <a class="nav" href="produtos.html">Produtos</a>
-        <a class="nav" href="loja.html">Nossas lojas</a>
-        <a class="nav" href="contato.html">Contato</a>
-    </nav>
+    <?php
+            include('menu.html');
+    ?>
     <!-- fim do menu -->
-    <h2>Nossas lojas</h2>
+    <h1>Nossas lojas</h1>
     <hr>
     <div class="lojas">
         <div class="loja-rj">
@@ -41,7 +38,7 @@
     
     <footer id="rodape">
         <p id="forma_pagamento">Formas de pagamento:</p>
-        <img src="./imag/Forma-pagamento.png" alt="Formas de pagamento" width="400px">
+        <img src="imag/Forma-pagamento.png" alt="Formas de pagamento" width="400px">
         <p>&copy; Recode Pro</p>
     </footer>        
   
