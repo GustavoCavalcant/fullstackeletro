@@ -33,6 +33,8 @@ if(isset($_POST['nome'])){
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilo.css">
     <title>Tela de pedidos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -46,24 +48,40 @@ if(isset($_POST['nome'])){
     
     <main class="pedidos">
 
-        <form action="" method="post">
-            <h4>Nome: </h4>
-            <input type="text" name="nome" placeholder="Digite seu nome completo">
-            <h4>Endereço: </h4>
-            <input type="text" name="endereco" placeholder="Ex: Rua das flores, 180">
-            <h4>Telefone: </h4>
-            <input type="number" name="telefone" placeholder="Ex: 11987878787">
-            <h4>Produto: </h4>
-            <textarea name="produto" placeholder="Descrição do produto"></textarea>
-            <h4>Valor unitário: </h4>
-            <input type="number" name="valor_unitario">
-            <h4>Quantidade: </h4>
-            <input type="number" name="quantidade">
-            <h4>Valor total: </h4>
-            <input type="number" name="valor_total">
-            <input type="submit" value="Enviar">
+    <form action="" method="post">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="nome">Nome</label>
+      <input type="email" class="form-control" name="nome" id="inputEmail4" placeholder="Digite seu nome completo">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="endereco">Endereço</label>
+      <input type="password" class="form-control" id="inputPassword4" name="endereco" placeholder="Ex: Rua das flores, 180">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="telefone">Telefone</label>
+    <input type="text" class="form-control" id="inputAddress" name="telefone" placeholder="Ex: 11987878787">
+  </div>
+  <div class="form-group">
+    <label for="produto">Produto</label>
+    <input type="text" class="form-control" id="inputAddress2" name="produto" placeholder="Descrição do produto">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="iunitario">Valor unitario</label>
+      <input type="number" name="valor_unitario" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="qtd">Quantidade</label>
+      <input type="number" class="form-control" name="quantidade">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="total">Valor Total</label>
+      <input type="number" name="valor_total">
+    </div>
+  </div>
 
-        </form>
 
     </main>
     <h2>Lista de Pedidos</h2>
@@ -82,11 +100,13 @@ if(isset($_POST['nome'])){
 
     ?> 
 
-    <footer id="rodape">
-        <p id="forma_pagamento">Formas de pagamento:</p>
-        <img src="imag/Forma-pagamento.png" alt="Formas de pagamento" width="400px">
-        <p>&copy; Recode Pro</p>
-    </footer>
+    <?php
+        include_once('footer.html');
+    ?>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
