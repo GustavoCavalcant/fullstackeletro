@@ -5,7 +5,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 #rodape {
     text-align: center;
 }
@@ -15,15 +14,11 @@ body {
     font-weight: 600;
     margin-top: 4px;
     cursor: pointer;
+    font-size: 25px;
 }
 
-.produtos-blocos {
 
-    float: left;
-    width: 25%;
-    /* text-align: center; */
-}
-.produtos-blocos img {
+#imag_produto {
     cursor: zoom-in;
 }
 .preco-antigo {
@@ -33,4 +28,11 @@ body {
 .preco-atual {
     font-size: 20px;
     color: red;
+}
+
+#input_nome {
+    width: 400px;
+}
+#input_msgs {
+    width: 400px;
 }
